@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('images/background.png') rgb(10, 204, 204);
+    background-size: 300px;    
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    color: #fff;
+}
+hr{
+    border: 1px solid black;
+    border-bottom: none;
+    margin: 10px 0;
+}
+.container{
+    background-color: rgb(10, 204, 204);
+    width: 1080px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.col-sm{
+    width: 25%;
+    padding: 10px;
+}
+.col-mid{
+    width: 33.33%;
+    padding: 10px;
+}
+.col-lg{
+    width: 50%;
+    padding: 10px;
+}
+/* ----------
+   Header
+--------- */
+.header{
+    position: relative;
+}
+.left-header{
+    display: flex;
+}
+.pro-pic{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.header-bio{
+    margin: auto 0;
+    padding: 10px;    
+}
+.right-header ul{   
+    width: 260px;
+    margin: 0 auto;
+}
+.right-header ul li{
+    list-style-type: none;
+    margin: 10px;
+}
+.right-header ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;    
+}
+.right-header ul li a:hover{
+    color: teal;
+}
+.right-header ul li i{
+    color:#fff;
+    padding: 3px;
+    padding-right: 5px;
+}
+/* ----------
+    Main
+--------- */
+.left-work h2,.left-skill h2{
+    text-align: center;
+}
+.col-sm>h3{
+    text-align: center;
+}
+main{
+    color: #fff;  
+}
+.right-p-info h4{
+    margin: 5px 0;
+}
+.mid-edu h4,h5{
+    margin: 5px 0;
+}
+.right-edu h4,h5{
+    margin: 5px 0;
+}
+
+.right-work{
+    width: 50%;
+}
+.knowledge h3{
+    padding: 5px 0;
+}
+.knowledge p{
+    padding: 5px;
+}
+
+/* ----------
+    Footer
+--------- */
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+.footer ul li{
+    
+    list-style-type: none;
+    text-align: center;
+    margin: 10px 5px;
+}
+.footer ul li a{    
+    text-decoration: none;
+    padding: 5px ;
+    border: 2px white solid;
+    border-radius: 0 10px 0 10px ;
+}
+.footer ul li a:hover{
+    border: 2px teal solid;
+    background-color: teal;
+}
+.footer-text{
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 500;
+}
+/* ---------
+Responsive 
+-----------*/
+@media screen and (max-width:600px){
+    .container{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .col-lg,.col-mid,.col-sm{
+        width: 100%;        
+    }
+}
